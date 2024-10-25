@@ -11,30 +11,76 @@
 header
 {
     border-bottom:1px solid grey;
-    color:#e5e5e5;
-    display:flex;
-    padding: 0.5em;
-
+    padding: 0.5em ;
+    display: flex;
+    padding-top: 0%;
 }
 
-h1
+
+h3
+{
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  width: 30%;
+}
+
+span {
+    color: #1bd79e;
+  }
+
+  header nav
+{
+  text-align: right;
+  width:100%
+}
+header i {
+  margin: 1em 0.5em;
+  text-align: right;
+  color: #e5e5e5;
+}
+
+  main
+{
+  margin:auto;
+  padding-top: 0.5em ;
+  width: 80%;
+  padding-bottom: 2em;
+}
+
+  h1
 {
 font-family:"yeseva";
 color: #e5e5e5;
-font-size: 3.5em;
-width:60%
+font-size: 3em;
+width:80%
 }
 
 body
 {background-color: #041821;}
 
-span {
-    color: #1bd79e;
-  }
-footer
-  {
-    text-align:center;
-    color: #e5e5e5;
+p
+{
+  color:#808080;
+  font-family:"montserrat"
+}
+
+main p 
+{
+  width: 65%;
+  font-size: 0.9em;
+}
+
+nav
+{
+  text-align: center;
+}
+
+main nav
+{
+  display:flex;
+  margin-bottom: 2em;
+  justify-content:center
 }
 
 button
@@ -44,7 +90,7 @@ button
   justify-content:center;
   border: none;
   padding: 0.5em;
-  font-size:0.9em;
+  font-size:0.6em;
   margin:0.6em;
   letter-spacing: 0.25em;
   
@@ -53,47 +99,7 @@ button
 nav button:nth-child(2) {
   background-color:#1bd79e;
 }
-nav
-{
-  text-align: center;
-}
 
-p
-{
-  color:#808080;
-  font-family:"montserrat"
-}
-p.s{
-  font-size: 0.75em;
-}
-p.Exercice
-{
-  font-size: 0.625em;
-}
-footer{
-  margin-bottom: 1em;
-}
-main
-{
-  margin:auto;
-  padding-top: 3em ;
-  width: 85%;
-  padding-bottom: 2em;
-}
-
-header nav
-{
-  text-align: right;
-  width:100%
-}
-h3
-{
-  margin:0%;
-  width: 30%;;
-  color: white;
-  font-size: 1.5em;
-
-}
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -104,23 +110,51 @@ h3
   width: 100%;
   object-fit: cover;
 }
-main nav
-{
-  display:flex;
-  margin-bottom: 2em;
-  justify-content:center
-}
-header i {
-  margin: 0.5em;
+
+footer
+  {
+    text-align:center;
+    color: #e5e5e5;
+    margin-bottom: 1em;
 }
 
-main p 
+p.s{
+  font-size: 0.75em;
+}
+
+p.Exercice
 {
-  width: 60%;
+  font-size: 0.625em;
 }
 
 @media only screen and (max-width:425px) and (min-width:320px)
 {
+  header
+{
+  padding:2em;
+    display: inherit;
+    width: auto;
+    padding: 10%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+
+}
+  h3
+  {
+   width:auto;
+   text-align: center;
+  }
+
+  header i {
+    margin: 0.5em;
+    padding:0.2em;
+    text-align: center;
+    margin-bottom: 0em;
+  }
+  header nav {
+    text-align: center;
+  }
+
   main
   {
     width: 100%;
@@ -128,11 +162,19 @@ main p
   h1
   {
     font-size:2em;
-    width:90%
+    width:100%
   }
+
+  main p 
+{
+width:auto;
+font-size: 0.5em;
+}
+
   button
   {
-  font-size:0.5em;
+  font-size:0.55em;
+  padding: 0%;
 }
 .grid
 {
@@ -141,32 +183,8 @@ main p
 .grid img:nth-child(n + 10) {
   display: none;
 }
-main p 
-{
-width:95%
 }
-h3
-{
- 
- width:auto;
- display:flex;
-
-}
-header
-{
-  padding:2em;
-    display: inherit;
-    width: auto;
-    padding: 10%;
-    margin-top: 0em;
-
-}
-header i {
-  margin: 0.5em;
-  padding:0.2em;
-}
-}
-@media screen and (min-width:768px)
+@media screen and (max-width:768px) and (min-width:768px)
 
 {
   header {
@@ -181,7 +199,7 @@ header i {
   }
 
   main h1 {
-    font-size: 2.8em;
+    font-size: 2em;
     width:95%
   }
 
@@ -205,7 +223,7 @@ header i {
   }
   h3
   {
-    width:90%
+    width:35%
   }
 }
 
